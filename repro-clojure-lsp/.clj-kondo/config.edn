@@ -1,0 +1,1 @@
+{:hooks {:analyze-call {repro/gen-bindings hooks.custom/gen-bindings-hook}}}
