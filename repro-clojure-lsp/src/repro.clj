@@ -9,7 +9,7 @@
 (defn f []
   (gen-bindings
    ;; `clj-kondo --lint` prints (correctly):
-   ;;   warning: unused binding foo
-   ;;   error:   Unresolved symbol: foo1
+   ;;   repro-clojure-lsp/src/repro.clj::: warning: unused binding foo
+   ;;   repro-clojure-lsp/src/repro.clj:15:7: error: Unresolved symbol: foo1
    ;; clojure-lsp crashes
    (+ foo1 bar)))
