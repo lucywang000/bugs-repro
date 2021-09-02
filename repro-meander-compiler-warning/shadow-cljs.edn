@@ -1,0 +1,22 @@
+{:source-paths ["src"]
+
+ :dependencies [[meander/epsilon "0.0.650"]]
+ :builds {:app {:target
+                :browser
+
+                :devtools {}
+
+                :dev
+                {}
+
+                :release
+                {:compiler-options
+                 {:optimizations :advanced
+                  :infer-externs true
+                  :source-map true
+                  :source-map-detail-level :all}}
+
+                :modules
+                {:main
+                 {:entries [repro.app]}}}
+         }}

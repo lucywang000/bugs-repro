@@ -19,8 +19,8 @@ node_modules/
 pom.xml
 pom.xml.asc
 profiles.clj
-public/js
-src/gen
+**/public/js
+**/src/gen
 data/
 .clj-kondo/cache
 .clj-kondo/.cache
