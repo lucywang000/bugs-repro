@@ -1,0 +1,30 @@
+{:source-paths ["src"]
+
+ :dependencies []
+ :builds
+ {:npm-module {:target           :npm-module
+               :devtools         {:enabled false}
+               :ns-regexp        "repro.foo"
+               :output-dir       "output/npm-module"
+               :compiler-options {:optimizations           :advanced
+                                  :infer-externs           true
+                                  :source-map              true
+                                  :source-map-detail-level :all}}
+
+  :node-script {:target           :node-script
+                :main             repro.foo/go
+                :output-to        "output/node-script/foo.js"
+                :compiler-options {:optimizations           :advanced
+                                   :infer-externs           true
+                                   :source-map              true
+                                   :source-map-detail-level :all}}
+
+  :browser {:target     :browser
+            :devtools   {}
+            :output-dir "output/browser"
+            :release {:compiler-options {:optimizations           :advanced
+                                         :infer-externs           true
+                                         :source-map              true
+                                         :source-map-detail-level :all}}
+            :modules {:main {:entries [repro.foo]}}}
+  }}

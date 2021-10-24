@@ -27,3 +27,4 @@ data/
 _gen/
 out/
 .cpcache
+output/
