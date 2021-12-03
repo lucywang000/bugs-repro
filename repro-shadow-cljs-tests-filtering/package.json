@@ -1,0 +1,22 @@
+{
+  "name": "repro",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "ii": "pnpm install --shamefully-hoist",
+    "cljs": "clj -A:shadow-cljs -M:shadow-cljs",
+    "watch": "pnpm cljs watch :test",
+    "ci-build": "pnpm cljs release :ci",
+    "ci-test": "karma start --single-run"
+  },
+  "devDependencies": {
+    "karma": "^6.3.4",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-cljs-test": "^0.1.0",
+    "source-map-support": "^0.5.20",
+    "ws": "^8.2.3"
+  },
+  "dependencies": {
+    "transit-js": "^0.8.867"
+  }
+}

@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  prosemirror-model: ^1.14.3
   react: ^17.0.1
   react-dom: ^17.0.1
   shadow-cljs: 2.15.12
@@ -8,6 +9,7 @@ specifiers:
   ws: ^7.1.2
 
 dependencies:
+  prosemirror-model: 1.14.3
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
 
@@ -351,6 +353,10 @@ packages:
     resolution: {integrity: sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=}
     engines: {node: '>=0.10.0'}
 
+  /orderedmap/1.1.1:
+    resolution: {integrity: sha512-3Ux8um0zXbVacKUkcytc0u3HgC0b0bBLT+I60r2J/En72cI0nZffqrA7Xtf2Hqs27j1g82llR5Mhbd0Z1XW4AQ==}
+    dev: false
+
   /os-browserify/0.3.0:
     resolution: {integrity: sha1-hUNzx/XCMVkU/Jv8a9gjj92h7Cc=}
     dev: true
@@ -392,6 +398,12 @@ packages:
     resolution: {integrity: sha1-czIwDoQBYb2j5podHZGn1LwW8YI=}
     engines: {node: '>= 0.6.0'}
     dev: true
+
+  /prosemirror-model/1.14.3:
+    resolution: {integrity: sha512-yzZlBaSxfUPIIP6U5Edh5zKxJPZ5f7bwZRhiCuH3UYkWhj+P3d8swHsbuAMOu/iDatDc5J/Qs5Mb3++mZf+CvQ==}
+    dependencies:
+      orderedmap: 1.1.1
+    dev: false
 
   /public-encrypt/4.0.3:
     resolution: {integrity: sha512-zVpa8oKZSz5bTMTFClc1fQOnyyEzpl5ozpi1B5YcvBrdohMjH2rfsBtyXcuNuwjsDIXmBYlF2N5FlJYhR29t8Q==}

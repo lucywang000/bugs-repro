@@ -1,0 +1,9 @@
+{:deps   {:aliases [:shadow-cljs]}
+ :builds {:test {:target :browser-test
+                 :test-dir "jstest"
+                 :devtools
+                 {:http-port 55555
+                  :http-root "jstest"}}
+          :ci   {:target    :karma
+                 :output-to  "karmatest/ci.js"
+                 :ns-regexp "-test$"}}}

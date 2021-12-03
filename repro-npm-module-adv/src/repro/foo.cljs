@@ -1,8 +1,12 @@
 (ns repro.foo
   (:require
-   ["/repro/bar.js" :refer [dict]]))
+   ["/repro/bar.js" :refer [dict v]]
+   ["/repro/schema-basic.js" :refer [schema nodes]]))
 
 (defn ^:export go []
-  (println dict))
+  v
+  (println dict)
+  (println nodes)
+  #_(println schema))
 
 (go)
