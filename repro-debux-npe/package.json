@@ -1,0 +1,14 @@
+{
+  "name": "repro",
+  "version": "0.0.1",
+  "scripts": {
+    "watch-server": "yarn shadow-cljs server",
+    "watch": "yarn shadow-cljs watch --debug :app",
+    "release-js": "yarn shadow-cljs release :app"
+  },
+  "devDependencies": {
+    "shadow-cljs": "2.16.6",
+    "source-map-support": "^0.5.19",
+    "ws": "^7.1.2"
+  }
+}

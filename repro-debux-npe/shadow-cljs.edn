@@ -1,0 +1,25 @@
+{:source-paths ["src"]
+
+ :dependencies [[philoskim/debux "0.8.1"
+                 hashp/hashp "0.2.1"]]
+ :nrepl {:cider true}
+
+ :builds {:app {:target
+                :browser
+
+                :devtools {}
+
+                :dev
+                {}
+
+                :release
+                {:compiler-options
+                 {:optimizations :advanced
+                  :infer-externs true
+                  :source-map true
+                  :source-map-detail-level :all}}
+
+                :modules
+                {:main
+                 {:entries [repro.app]}}}
+         }}

@@ -1,7 +1,9 @@
 module.exports = function (config) {
     config.set({
       browsers: ['Chrome'],
+      // The directory where the output file lives
       basePath: 'karmatest/',
+      // The file itself
       files: [
         'ci.js',
       ],
